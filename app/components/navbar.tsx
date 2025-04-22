@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -15,14 +16,20 @@ export default function Navbar() {
         <h1 className="text-3xl">Shitter</h1>
       </div>
       <ul className="flex gap-2">
-        <li className="border p-1.5 rounded-md">
-          <Link href="/posts/new">Create Post</Link>
+        <li>
+          <Link href="/posts/new">
+            <Button>Create Post</Button>
+          </Link>
         </li>
-        <li className="border p-1.5 rounded-md">
-          <Link href="/sign-up">Sign Up</Link>
+        <li>
+          <Link href="/sign-up">
+            <Button variant="outline">Sign Up</Button>
+          </Link>
         </li>
-        <li className="border p-1.5 rounded-md">
-          <Link href="/sign-in">Sign In</Link>
+        <li>
+          <Link href="/sign-in">
+            <Button variant="outline">Sign In</Button>
+          </Link>
         </li>
       </ul>
     </nav>
